@@ -165,29 +165,7 @@ python main.py -e "explain (2 + 3) * 4 ^ 2"
 pytest tests/ -v
 ```
 
----
 
-## 6. Packaging & Submission for Google Drive
-
-To build the submission ZIP file ready for Google Drive:
-```bash
-python package_submission.py
-```
-This script:
-1. Runs all 43 automated unit tests to verify zero regressions.
-2. Filters out temporary caches (`__pycache__`, `.pytest_cache`).
-3. Generates **`StepCalc_CMPSC132_Final_Project.zip`** in the project root.
-4. Upload the generated `.zip` to your Google Drive and paste the shared link in MVLE.
-
----
-
-## 7. Project Presentation Guide (For Group Members)
-
-When presenting to the professor:
-1. **Introduction:** State the language name (**StepCalc**) and purpose (an educational integer programming language featuring step-by-step mathematical tracing).
-2. **Grammar & Lexing:** Show `stepcalc/grammar.py` and explain that **zero `if-else` text processing** was used, demonstrating proper declarative EBNF grammar rules compiled with Lark.
-3. **AST & Visitor Pattern:** Open `stepcalc/ast_nodes.py` to show documented class variables and `stepcalc/evaluator.py` to explain how the AST is evaluated.
-4. **Live Demo:**
    - Run `python main.py examples/demo.calc` to show precedence, variables, and AST trees.
    - Run `python main.py examples/error_cases.calc` to show visual caret error handling.
    - Run `pytest tests/ -v` to show all 43 test cases passing.
