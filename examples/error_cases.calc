@@ -1,0 +1,28 @@
+# ======================================================================
+# StepCalc Error Handling Demonstration (.calc)
+# Demonstrates diagnostic formatting, caret pointers (^^^), and hints
+# ======================================================================
+
+# 1. Consecutive Operators (Format / Syntax Error)
+10 + * 5
+
+# 2. Unclosed Parenthesis (Format / Syntax Error)
+(20 + 30 * 2
+
+# 3. Unmatched Closing Parenthesis (Syntax Error)
+50 + 20)
+
+# 4. Illegal Character (Lexical Error)
+100 $ 20
+
+# 5. Division by Zero (Runtime Evaluation Error)
+50 / 0
+
+# 6. Modulo by Zero (Runtime Evaluation Error)
+50 % 0
+
+# 7. Negative Exponent (Domain Error: Integer Language)
+2 ^ -3
+
+# 8. Undefined Variable Lookup (Runtime Semantic Error)
+total_score + 10

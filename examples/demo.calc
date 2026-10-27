@@ -1,0 +1,33 @@
+# ======================================================================
+# StepCalc Demonstration Script (.calc)
+# CMPSC 132: Programming Languages - Final Project
+# ======================================================================
+
+# 1. Basic Arithmetic & Precedence (PEMDAS/BODMAS)
+2 + 3 * 4
+(2 + 3) * 4
+2 ^ 3 ^ 2
+(2 ^ 3) ^ 2
+
+# 2. Integer Division and Modulo
+20 / 3
+20 % 3
+
+# 3. Unary Operators & Nested Parentheses
+-5 + +10
+-(3 + 4) * 2
+
+# 4. Variable Assignments and Re-use
+base = 10
+height = 5
+area = (base * height) / 2
+area
+
+# 5. On-Demand AST Visualization
+tree (base + height) * 2
+
+# 6. On-Demand Step-by-Step Reduction Explainer
+explain (base + height) * 2
+
+# 7. Symbol Table Inspection
+:vars
